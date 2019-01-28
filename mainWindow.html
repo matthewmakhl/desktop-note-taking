@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link href="./assets/libs/fontawesome/css/all.css" rel="stylesheet">
+    <link href="./assets/libs/googlefont/PoorStory.css" rel="stylesheet">
+    <title>Desktop note</title>
+</head>
+
+<body>
+    <header>
+        <i class="far fa-sticky-note"></i>
+        <h1>
+            Take notes before you forget!
+        </h1>
+        <i class="fas fa-plus-circle" title="Add notes!" id="addNote"></i>
+
+
+    </header>
+
+    <section id="notes">
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="column"></div>
+    </section>
+
+    <template id="noteTemplate">
+        <div class='single-note'>
+            <i class="fas fa-times"></i>
+            <form action="/:id" method="PUT">
+                <textarea name="text"></textarea>
+            </form>
+            <img src="">
+        </div>
+    </template>
+
+    <!-- <script src="./assets/libs/jquery/jquery.min.js"></script> -->
+    <script type='text/javascript' src="./assets/js/index.js"></script>
+</body>
+
+</html>

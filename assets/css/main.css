@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    background-color: #eee;
+}
+
+header {
+    background-color: #D9F0A0;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    box-shadow: 1.5px 1.5px #aaa;
+}
+
+header h1, header i {
+    display: inline-block;
+    margin: 0 10px;
+    font-family: 'Poor Story', 'Arial Narrow', Arial, sans-serif
+}
+
+header i {
+    font-size: 24px;
+}
+
+#addNote {
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+section#notes {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+@media only screen and (max-width: 600px){
+    section#notes {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+}
+
+#notes div div {
+    background-color: #fff;
+    box-shadow: 2px 2px #aaa;
+    margin: 8px;
+    padding: 8px;
+    font-family: 'Poor Story', 'Arial Narrow', Arial, sans-serif    
+}
+
+#notes div textarea {
+    border: none;
+    outline: none;
+    resize: none;
+    width: 100%;
+    /* overflow: hidden; */
+}
+
+#notes i {
+    float: right;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.column {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.active img {
+    height: 100px;
+    width: auto;
+    float: right;
+    opacity: 0.4;
+}
